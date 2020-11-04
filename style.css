@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    display: flex;
+}
+
+#inner-card{
+    width: 100%;
+    height: 100%;
+}
+
+#outer-card {
+    height: 100%;
+    width: 100%;
+    perspective: 3000px;
+    position: relative;
+}
+
+.front-card {
+transform: rotateY(0);
+}
+
+.back-card {
+transform: rotateY(180d);
+}
+
+.front-card,
+.back-card {
+    height: 100vh;
+    width: 100vh;
+    position: relative;
+    background: white;
+    backface-visibility: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
