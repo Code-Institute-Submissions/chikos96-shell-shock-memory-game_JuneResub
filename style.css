@@ -25,6 +25,10 @@ body {
     margin: 10px;
 }
 
+.shell-game.flip {
+    transform: rotateY(180d);
+}
+
 .front-card, .back-card {
     height: 100%;
     width: 100%;
