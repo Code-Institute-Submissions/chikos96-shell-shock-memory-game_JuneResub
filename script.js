@@ -1,11 +1,11 @@
-let card = document.querySelectorAll("shell-card");
+const card = document.querySelectorAll(".shell-card");
 
 let cardsFlipped = false;
 let lockBoard = false;
 let cardShellOne, cardShellTwo;
 
 function cardFlip () {
-    if (lockBoard === false) return;
+    if (lockBoard) return;
     if (this === cardShellOne) return;
 
     this.classList.add('flip')
@@ -16,15 +16,14 @@ function cardFlip () {
 
         return;
     }
-    
         cardShellTwo = this;
         checkCardsMatch();
 }
 
 function checkCardsMatch () {
-    let match = cardShellOne.dataset.name === cardShellTwo.dataset.name
+    let isMatch = cardShellOne.dataset.name === cardShellTwo.dataset.name
 
-    match ? disableCards : cardsUnflipped
+    isMatch ? disableCards : cardsUnflipped
 }
 
 function disableCards () {
@@ -46,7 +45,7 @@ function cardsUnflipped () {
 }
 
 function gameReset() {
-    [shellBoard, cardsFlipped] = [false, false]
+    [lockBoard, cardsFlipped] = [false, false]
     [cardShellOne, cardShellTwo] = [false, false]
 }
 
