@@ -8,7 +8,7 @@ function cardFlip () {
     if (lockBoard) return;
     if (this === cardShellOne) return;
 
-    this.classList.toggle('flip')
+    this.classList.add('flip')
                         
     if (cardsFlipped)   {
         cardsFlipped = true;
@@ -22,9 +22,9 @@ function cardFlip () {
 }
 
 function checkCardsMatch () {
-    let match = cardShellOne.dataset.name === cardShellTwo.dataset.name
+    let isMatch = cardShellOne.dataset.name === cardShellTwo.dataset.name
 
-    match ? disableCards : cardsUnflipped
+    isMatch ? disableCards : cardsUnflipped
 }
 
 function disableCards () {
@@ -46,8 +46,8 @@ function cardsUnflipped () {
 }
 
 function gameReset() {
-    [shellBoard, cardsFlipped] = [false, false]
-    [cardShellOne, cardShellTwo] = [false, false]
+    [lockBoard, cardsFlipped] = [false, false]
+    [cardShellOne, cardShellTwo] = [null, null]
 }
 
 (function cardShuffle () {
