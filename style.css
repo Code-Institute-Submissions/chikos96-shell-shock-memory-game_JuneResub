@@ -15,15 +15,19 @@ body {
     width: 500px;
     height: 500px;
     flex-wrap: wrap;
-   perspective: 4000px; 
+    margin: auto;
+   
 }
 
 .shell-card {
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    transform: scale(1);
     position: relative;
     width: 25%;
     height: 33%;
     margin: 10px;
-    transform: scale(1)
+    perspective: 4000px
 }
 
 .shell-game.flip {

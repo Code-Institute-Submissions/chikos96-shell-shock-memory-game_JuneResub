@@ -5,10 +5,10 @@ let lockBoard = false;
 let cardShellOne, cardShellTwo;
 
 function cardFlip () {
-    if (lockBoard) return;
+    if (lockBoard === false) return;
     if (this === cardShellOne) return;
 
-    this.classList.toggle('flip')
+    this.classList.add('flip')
                         
     if (cardsFlipped)   {
         cardsFlipped = true;
