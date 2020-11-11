@@ -46,11 +46,7 @@ function cardsUnflipped () {
 
 function gameReset() {
     [lockBoard, cardsFlipped] = [false, false]
-<<<<<<< HEAD
     [cardShellOne, cardShellTwo] = [null, null]
-=======
-    [cardShellOne, cardShellTwo] = [false, false]
->>>>>>> fa4a5ee1b9dddb150fcd9f26068beb8ac8858b14
 }
 
 (function cardShuffle () {
