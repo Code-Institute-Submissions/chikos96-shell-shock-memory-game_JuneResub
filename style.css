@@ -15,22 +15,36 @@ body {
     width: 500px;
     height: 500px;
     flex-wrap: wrap;
+<<<<<<< HEAD
    perspective: 4000px;
    margin: auto;
+=======
+    margin: auto;
+   perspective: 4000px
+>>>>>>> fa4a5ee1b9dddb150fcd9f26068beb8ac8858b14
 }
 
 .shell-card {
-    position: relative;
     width: 25%;
     height: 33%;
     margin: 10px;
     transform-style: preserve-3d;
+<<<<<<< HEAD
     transform: scale(1);
     transition: transform .3s;
 }
 
 .shell-game:active {
     transform: scale(0.95);
+=======
+    transition: transform .2s;
+    transform: scale(1);
+    position: relative;
+}
+
+.shell-card:active{
+    transform: scale(0.96);
+>>>>>>> fa4a5ee1b9dddb150fcd9f26068beb8ac8858b14
     transition: transform .2s;
 }
 
