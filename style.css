@@ -16,18 +16,22 @@ body {
     height: 500px;
     flex-wrap: wrap;
     margin: auto;
-   
+   perspective: 4000px
 }
 
 .shell-card {
-    transform-style: preserve-3d;
-    transition: transform 2s;
-    transform: scale(1);
-    position: relative;
     width: 25%;
     height: 33%;
     margin: 10px;
-    perspective: 4000px
+    transform-style: preserve-3d;
+    transition: transform .2s;
+    transform: scale(1);
+    position: relative;
+}
+
+.shell-card:active{
+    transform: scale(0.96);
+    transition: transform .2s;
 }
 
 .shell-game.flip {
