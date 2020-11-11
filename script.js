@@ -4,8 +4,9 @@ let cardsFlipped = false;
 let lockBoard = false;
 let cardShellOne, cardShellTwo;
 
-function cardFlip () {
+function switchCard () {
     if (lockBoard) return;
+
     if (this === cardShellOne) return;
 
     this.classList.add('flip')
@@ -21,7 +22,7 @@ function cardFlip () {
 }
 
 function checkCardsMatch () {
-    let isMatch = cardShellOne.dataset.name === cardShellTwo.dataset.name
+    let isMatch = cardShellOne === cardShellTwo
 
     isMatch ? disableCards : cardsUnflipped
 }
@@ -29,6 +30,8 @@ function checkCardsMatch () {
 function disableCards () {
     cardShellOne.removeEventListener('click', cardFlip)
      cardShellTwo.removeEventListener('click', cardFlip)
+
+     gameReset();
 }
 
 function cardsUnflipped () {
@@ -39,7 +42,7 @@ function cardsUnflipped () {
         cardShellTwo.classList.remove('flip')
 
 
-        gameReset()
+        gameReset();
     }, 2500);
 
 }
@@ -56,4 +59,4 @@ function gameReset() {
     })
 })
 
-card.forEach(card => card.addEventListener('click', cardFlip))
+card.forEach(card => card.addEventListener('click', switchCard))
