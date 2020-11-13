@@ -6,6 +6,10 @@ body {
     background-color: lightgreen;
 }
 
+h1 {
+    text-align: center;
+}
+
 #game-container {
     margin-left: 24px;
     height: 550px;
