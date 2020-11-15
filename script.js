@@ -12,7 +12,7 @@ shuffle ()
 
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('click', ()=> {
-        if(!firstClick)(time())
+        if(!firstClick){time()}
         firstClick = true
 
         if(card[i].state == 'unclicked') {
@@ -37,7 +37,7 @@ for (let i = 0; i < card.length; i++) {
 
 function check() {
     if (counter==2) {
-        if (pairCards[0].querySelector('img').src==pairCards[i].querySelector('img').src) {
+        if (pairCards[0].querySelector('img').srcs==pairCards[1].querySelector('img').srcs) {
             matched()  
         } else {
             unmatched(pairCards[0], pairCards[1])
@@ -90,14 +90,15 @@ function shuffle(){
     let images = document.querySelectorAll('img')
     let srcs = ['donatello.jpg','leonardo.png','raphael.jpg','shredder.jpg','splinter.jpg','michelangelo.png','shell-shock.jpg']
 
-    for (let i = srcs.length; i>0; i++) {
+    for (let i = srcs.length-1; i>0; i--)  {
+        console.log("loaded");
         let j = Math.floor(Math.random() * i);
-        let shell = srcs[i];
+        let temp = srcs[i];
         srcs[i] = srcs[j];
-        srcs[j] = shell;
+        srcs[j] = temp;
     }
-    for (let i = 0; i < images.length ; i++) {
-        images[i].src = srcs[1];
+    for (let i=0; i < images.length ; i++) {
+        images[i].src = "assets/images/" + srcs[1];
         
     }
 
