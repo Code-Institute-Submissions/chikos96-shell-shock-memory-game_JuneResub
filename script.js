@@ -74,14 +74,17 @@ function unmatched(){
 //Creeating time function
 function time(){
     let secs = 0;
+    let mins = 0;
     let SS;
+    let MM;
     setInterval(() => {
         secs++
-        if(secs==60)
+        if(secs==60){secs=0; mins++}
 
         secs<10?SS=`0${secs}`:SS=`0${secs}`
+        mins<10?SS=`0${mins}`:SS=`0${mins}`
 
-        document.querySelectorAll('#time').innerHTML = `${SS}`;
+        document.querySelectorAll('#time').innerHTML = `${MM}:${SS}`;
     }, 1000);
 
 }
