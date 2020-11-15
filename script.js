@@ -81,17 +81,17 @@ function time(){
         secs++
         if(secs==60){secs=0; mins++}
 
-        secs<10?SS=`0${secs}`:SS=`0${secs}`
-        mins<10?SS=`0${mins}`:SS=`0${mins}`
+        secs<10?SS=`0${secs}`:SS=`${secs}`
+        mins<10?MM=`0${mins}`:SS=`${mins}`
 
-        document.querySelectorAll('#time').innerHTML = `${MM}:${SS}`;
+        document.querySelector('#time').innerHTML = `${MM}:${SS}`;
     }, 1000);
 
 }
 //Creating the shuffle function with the images
 function shuffle(){
     let images = document.querySelectorAll('img')
-    let srcs = ['donatello.jpg','leonardo.png','raphael.jpg','shredder.jpg','splinter.jpg','michelangelo.png','shell-shock.jpg']
+    let srcs = ['donatello.jpg','leonardo.png','raphael.jpg','shredder.jpg','splinter.jpg','michelangelo.png', 'shell-shock.jpg', 'foot-ninja.jpg', 'turtle-power.png', 'donatello3.jpg', 'leonardo2.png', 'michelangelo2.png', 'shredder.jpg', 'tmnt.jpg']
 
     for (let i = srcs.length-1; i>0; i--)  {
         console.log("loaded");
@@ -101,7 +101,8 @@ function shuffle(){
         srcs[j] = temp;
     }
     for (let i=0; i < images.length ; i++) {
-        images[i].src = "assets/images/" + srcs[1];
+        images[i].src = 'assets/images/' + `${srcs[i]}`
+        
         
     }
 
