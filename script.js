@@ -5,7 +5,7 @@ let pairCards = [];
 let firstClick = false;
 
 card.forEach((card)=>{ 
-    card.state = 'unclicked'
+    card.state = 'unclicked';
     console.log();
 });
 //Creating a shuffle function
@@ -15,16 +15,13 @@ for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('click', ()=> {
         firstClick = true;
         
-
         if(card[i].state == 'unclicked') {
             card[i].style.transform = 'rotateY(180deg)';
             card[i].state = 'clicked';
             counter++;
             pairCards.push(card[i]);
             check();
-
         }
-
         else if (card[i].state == 'clicked') {
             card[i].style.transform = 'rotateY(0deg)';
             card[i].state = 'unclicked';
@@ -37,43 +34,16 @@ for (let i = 0; i < card.length; i++) {
 //Creating a check function
 
 function check() {
-    if (counter==2) {
+    if (counter==0) {
+        console.log(counter);
         if (pairCards[0].querySelector('img')==pairCards[1].querySelector('img')) {
             matched();  
         } else {
             unmatched();
         }
-        console.log(pairCards[0]);
-        console.log(pairCards[1]);
-    
+        
     }
 }
-
-//If cards match, then the player scores
-function matched(){
-    let ifMatch = pairCards[0].dataset.name === pairCards[1].dataset.name;
-    
-    ifMatch === true;
-
-    counter = 0;
-    pairCards = [];
-    let score = document.querySelector('#score').innerHTML;
-    score++;
-     document.querySelector('#score').innerHTML = score;
-
-}
-
-//if cards do not match, the player tries again
-function unmatched(){
-    setTimeout(() => {
-        let ifMatch = pairCards[0].dataset.name || pairCards[1].dataset.name;
-
-        ifMatch = false;
-       
-    }, 850);
-
-}
-
 //Creeating time function
 function time(){
     let secs = 0;
@@ -96,7 +66,7 @@ function time(){
 //Creating the shuffle function with the images
 function shuffle() {
     let images = document.querySelectorAll('img');
-    let srcs = 'assets/images'
+    let srcs = 'assets/images';
     
     for (let i = images.length-1; i>0; i--)  {
         let j = Math.floor(Math.random() * i);
@@ -106,9 +76,6 @@ function shuffle() {
     }
     for (let i=0; i < images.length ; i++) {
         srcs[i] = 'assets/images/';
-        console.log(images);
-           
+        console.log(images);    
     }
-
-
 }
