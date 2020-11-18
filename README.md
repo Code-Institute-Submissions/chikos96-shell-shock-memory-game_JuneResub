@@ -11,7 +11,6 @@ find all the cards to match. It is fun and interactive for all users. It will be
 
 ### User stories
 - As a user, I want to be able to click all the cards.
-- As a user, I want to be able to get some scores.
 - As a user, I want to be able to see how much time did i match my cards.
 - As a user, I want to play the game again.
 - As a user, i want to understand easily about the functionality of the game.
@@ -22,21 +21,19 @@ find all the cards to match. It is fun and interactive for all users. It will be
 - Typography
       -  I used Cambria font style. 
 - Imagery
-    -  I found the image on the website to find the characters that everyone likes. These images could attract the user's attention.
+    -  I found the image on the website to find the characters that everyone likes. 
+    These images could attract the user's attention.
 
 ## Wireframe
-This is the wireframe that i did for desktop, mobile and tablet. It shows my explanation on how my website should be.
+This is the wireframe that i did for desktop, mobile and tablet. It shows my explanation on how i want my game to be displayed.
 
-- []
+- [Memory Game Wireframe](https://github.com/chikos96/shell-shock-memory-game/blob/bc2238c5a07495ac63edbfdfa353c3172d16baeb/memory-game-wireframe.pdf)
 ## Features
 
 The game will consist of 14 cards with the title above and the score and time below the cards. 
  
 ### Existing Features
 - Cards- it allows the users to click and see what the card reveals. 
-
-- Score- it allows the users to see how much he/she scored on the game
-
 - Time- it allows the users to check how much time he/she needs to complete the game.
 
 ## Future Feautures
@@ -44,6 +41,7 @@ The game will consist of 14 cards with the title above and the score and time be
 - As a returning user, I want the game to have a popup.
 - As a returning user, i want time to stop when i complete the game.
 - As a returning user, I want to play the game again but with buttons.
+- As a returning user, I want to be able to get some scores.
 
 ## Technologies Used
 
@@ -56,12 +54,6 @@ The game will consist of 14 cards with the title above and the score and time be
 
 ## Testing
 
-First I have validated my website using the W3C HTML Validator and W3C CSS Validator to see if there were any errors. 
-I even used DevTools to check how my website is doing and to see if there are any bugs. 
-So far the website has no bugs and no errors.
-
--   [W3C Markup and CSS Validator test results]
--   [Using Devtools on my website]
 ### Testing User Stories from User Experience (UX) Section
 
 ### As a user, I want to be able to click all the cards.
@@ -85,10 +77,9 @@ the cards are and if they match or not
 
 ## Further Testing
 
-I have also tested my website through browsers like Mozilla Firefox and Microsoft Edge.
-I have also tested my website on different devices and they all work. Here are the screenshots below:
 
-[The screenshots for testing proof]()
+
+[The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/bff3f724301bfeb1395f74c481a0ff20f6f9fcb2/screenshots%20for%20testing%20validation.pdf)
 ## Deployment
 
 - To deploy my project to GitHub pages, here are the following:
@@ -97,7 +88,7 @@ I have also tested my website on different devices and they all work. Here are t
     3. Click to the project (i.e. shell-shock memory game)
     4. Go and click Settings.
     5. Scroll down to GitHub pages.
-    6. Click and change "None" to "master" because it will automatically show the root folder.
+    6. Click and change "None" to "main" because it will automatically show the root folder.
     7. Click Save.
     8. The page will automatically refresh.
     9. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section. 
@@ -106,10 +97,6 @@ I have also tested my website on different devices and they all work. Here are t
 ## Credits
 
 ## Code
--   [W3Schools](https://www.w3schools.com/)
--   []()
--   []()
-
 
 ### Content
 - To create the memory game, i watched the tutorial by codeTonight which gave me useful tips
@@ -120,5 +107,5 @@ while changing the code to help fit my own needs for the game.(https://www.youtu
 
 ### Acknowledgements
 
-- I received inspiration from the Fandom website. 
+- I received inspiration from Nickeledeon. 
 - I would like to thank the Tutor Assistance for helping me with technical difficulties.
