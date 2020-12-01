@@ -20,6 +20,7 @@ for (let i = 0; i < card.length; i++) {
             card[i].state = 'clicked';
             counter++;
             pairCards.push(card[i]);
+            console.log('firstclick')
             check();
         }
         else if (card[i].state == 'clicked') {
@@ -66,16 +67,16 @@ function time(){
 //Creating the shuffle function with the images
 function shuffle() {
     let images = document.querySelectorAll('img');
-    let srcs = 'assets/images';
-    
+    //let srcs = 'assets/images';
     for (let i = images.length-1; i>0; i--)  {
         let j = Math.floor(Math.random() * i);
-        let temp = srcs[i];
-        srcs[i] = srcs[j];
-        srcs[j] = temp;
+        card[i].style.order = i;
+        card[j] = j;
     }
+    /*
     for (let i=0; i < images.length ; i++) {
         srcs[i] = 'assets/images/';
         console.log(images);    
-    }
+    }*/
 }
+
