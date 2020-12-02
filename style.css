@@ -9,8 +9,8 @@ h1 {
 }
 
 .inner-card {
-    height: 100px;
-    width: 150px;
+    height: 120px;
+    width: 180px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.85s ease;
@@ -22,6 +22,7 @@ h1 {
     grid-template-columns: repeat(2, auto);
     grid-gap: 20px 40px;
     margin: 20px;
+    justify-content: center;
     perspective: 1300px;
     background: transparent;
 }
