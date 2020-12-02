@@ -20,7 +20,7 @@ for (let i = 0; i < card.length; i++) {
             card[i].state = 'clicked';
             counter++;
             pairCards.push(card[i]);
-            console.log('firstclick')
+            console.log(this)
             check();
         }
         else if (card[i].state == 'clicked') {
@@ -38,12 +38,16 @@ function check() {
     if (counter==0) {
         console.log(counter);
         if (pairCards[0].querySelector('img')==pairCards[1].querySelector('img')) {
+            console.log('img')
             matched();  
         } else {
             unmatched();
         }
         
     }
+}
+
+function matched () {
 }
 //Creeating time function
 function time(){
