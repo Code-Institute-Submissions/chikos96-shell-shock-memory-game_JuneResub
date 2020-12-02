@@ -70,8 +70,8 @@ function shuffle() {
     //let srcs = 'assets/images';
     for (let i = images.length-1; i>0; i--)  {
         let j = Math.floor(Math.random() * i);
-        card[i].style.order = i;
-        card[j] = j;
+        card[j].style.order = i;
+        card[i] = j;
     }
     /*
     for (let i=0; i < images.length ; i++) {
