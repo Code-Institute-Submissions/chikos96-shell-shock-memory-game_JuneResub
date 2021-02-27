@@ -32,7 +32,7 @@ function game() {
             cardRotated = false;
             secondClick = this;
             // check if these 2 first clicks are matched
-            matched()
+            matched();
         };
     });
 }
@@ -45,9 +45,9 @@ function matched() {
         }, 1000);
         disableClick();
         pairCards.push(firstClick, secondClick)
-        endGame()
+        endGame();
     } else {
-        unmatched()
+        unmatched();
     }
 }
 
