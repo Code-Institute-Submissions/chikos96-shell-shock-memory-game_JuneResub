@@ -34,13 +34,14 @@ function game() {
     });
 }
 function matched() {
-    if (firstClick.dataset.data-name === secondClick.dataset.data-name) {
+    if (firstClick.dataset.name === secondClick.dataset.name) {
         lockBoard = true
-        pairCards.push(firstClick, secondClick)
         setTimeout(function () {
             lockBoard = false;
-        }, 850);
+        }, 1000);
+        pairCards.push(firstClick, secondClick)
         disableClick();
+        return;
     } else {
         unmatched()
     }
