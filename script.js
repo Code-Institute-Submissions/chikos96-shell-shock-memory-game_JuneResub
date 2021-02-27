@@ -70,6 +70,9 @@ function resetBoard() {
     firstClick = null;
     secondClick = null;
     cardRotated = false;
+    $(".inner-card").each(function (){
+        this.style.transform = 'rotateY(0deg)'; // rotate back to the back-shell
+    });
 }
 
 //Creeating time function
