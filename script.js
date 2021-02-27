@@ -1,15 +1,22 @@
 /*jshint esversion: 6 */
-let card = document.querySelectorAll('.inner-card');
+let card = [];
 let counter = 0;
 let pairCards = [];
-let firstClick = false;
+let firstClick = null;
+let secondClick = null;
+let firstPick, secondPick;
 
 card.forEach((card)=>{ 
     card.state = 'unclicked';
     console.log();
 });
 //Creating a shuffle function
-shuffle ();
+$(document).ready(function () {
+    shuffle ();
+    game();
+    time();
+    check();
+});
 
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('click', ()=> {
@@ -21,7 +28,6 @@ for (let i = 0; i < card.length; i++) {
             counter++;
             pairCards.push(card[i]);
             console.log(this)
-            check();
         }
         else if (card[i].state == 'clicked') {
             card[i].style.transform = 'rotateY(0deg)';
@@ -30,7 +36,6 @@ for (let i = 0; i < card.length; i++) {
             pairCards = [];
         }
     });
-    time();
 }
 //Creating a check function
 
@@ -48,6 +53,15 @@ function check() {
 }
 
 function matched () {
+    if (firstPick.dataset.data-name === secondPick.dataset.data-name) {
+        lockBoard = true
+    }
+}
+
+function unmatched (){
+   $(firstPick).removeClass(card)
+    $(secondPick).removeClass(card)
+    lockBoard = false
 }
 //Creeating time function
 function time(){
@@ -66,6 +80,12 @@ function time(){
         
     }, 1000);
 
+}
+
+function addCards() {
+  $(".inner-card").each(function () {
+    cards.push(this);
+  });
 }
 
 //Creating the shuffle function with the images
