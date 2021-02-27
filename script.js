@@ -69,26 +69,6 @@ function resetBoard() {
     firstClick = null;
     secondClick = null;
     cardRotated = false;
-    lockBoard = true;
-}
-for (let i = 0; i < card.length; i++) {
-    card[i].addEventListener('click', () => {
-        firstClick = true;
-
-        if (card[i].state == 'unclicked') {
-            card[i].style.transform = 'rotateY(180deg)';
-            card[i].state = 'clicked';
-            counter++;
-            pairCards.push(card[i]);
-            console.log(this)
-        }
-        else if (card[i].state == 'clicked') {
-            card[i].style.transform = 'rotateY(0deg)';
-            card[i].state = 'unclicked';
-            counter--;
-            pairCards = [];
-        }
-    });
 }
 
 //Creeating time function
