@@ -11,6 +11,7 @@ $(document).ready(function () {
     });
     game();
     time();
+    shuffle();
 });
 
 function game() {
