@@ -13,21 +13,16 @@ $(document).ready(function () {
 });
 
 function game() {
-    $(".inner-card").on("click", function () {
+    $(".inner-card").off('click').on("click", function () {
         if (lockBoard === false) {
             if (this === firstClick) {
                 // to not click the same card twice
                 return;
             } else {
                 this.style.transform = 'rotateY(180deg)';
-                cardRotated = true;
             }
         }
-        else {
-            return;
-        }
-
-        if (cardRotated === false) {//first click
+        if (cardRotated === false) { //first click
             cardRotated = true;
             firstClick = this;
         } else { // second click
@@ -38,7 +33,6 @@ function game() {
         };
     });
 }
-
 function matched() {
     if (firstClick.dataset.data-name === secondClick.dataset.data-name) {
         lockBoard = true
