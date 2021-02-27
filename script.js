@@ -23,6 +23,7 @@ function game() {
                 this.style.transform = 'rotateY(180deg)';
             }
         }
+
         if (cardRotated === false) { //first click
             cardRotated = true;
             firstClick = this;
@@ -34,19 +35,21 @@ function game() {
         };
     });
 }
+
 function matched() {
     if (firstClick.dataset.name === secondClick.dataset.name) {
         lockBoard = true
         setTimeout(function () {
             lockBoard = false;
         }, 1000);
-        pairCards.push(firstClick, secondClick)
         disableClick();
-        return;
+        pairCards.push(firstClick, secondClick)
+        endGame()
     } else {
         unmatched()
     }
 }
+
 
 function unmatched() {
     cardRotated = false;
@@ -73,6 +76,17 @@ function resetBoard() {
     $(".inner-card").each(function (){
         this.style.transform = 'rotateY(0deg)'; // rotate back to the back-shell
     });
+}
+
+function endGame() {
+    if (pairCards.length === 14) {
+        setTimeout(function () {
+            alert('Congratulations');
+        }, 1500);
+        setTimeout(function () {
+            resetBoard();
+        }, 1500);
+    }
 }
 
 //Creeating time function
