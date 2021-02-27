@@ -10,6 +10,7 @@ $(document).ready(function () {
         card.push(this);
     });
     game();
+    time();
 });
 
 function game() {
