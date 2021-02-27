@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-let card = [];
+let card = []; // contain all the cards
 let counter = 0;
 let pairCards = [];
 let firstClick = null;
@@ -12,12 +12,20 @@ card.forEach((card)=>{
 });
 //Creating a shuffle function
 $(document).ready(function () {
-    shuffle ();
     game();
+    shuffle();
     time();
-    check();
-});
 
+});
+function matched () {
+     if (firstPick.dataset.data-name === secondPick.dataset.data-name) {
+        lockBoard = true
+    }
+    $(firstPick).addClass('unmatched-cards');
+    $(secondPick).addClass('unmatched-cards');
+
+}
+function game() {
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('click', ()=> {
         firstClick = true;
@@ -52,15 +60,9 @@ function check() {
     }
 }
 
-function matched () {
-    if (firstPick.dataset.data-name === secondPick.dataset.data-name) {
-        lockBoard = true
-    }
-}
-
 function unmatched (){
-   $(firstPick).removeClass(card)
-    $(secondPick).removeClass(card)
+   $(firstPick).removeClass(".inner-card")
+    $(secondPick).removeClass(".inner-card")
     lockBoard = false
 }
 //Creeating time function
@@ -103,4 +105,4 @@ function shuffle() {
         console.log(images);    
     }*/
 }
-
+}
