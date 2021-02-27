@@ -54,7 +54,7 @@ function unmatched() {
         firstClick.style.transform = 'rotateY(0deg)'; //rotate back to the back-shell
         secondClick.style.transform = 'rotateY(0deg)'; //rotate back to the back-shell
         lockBoard = false;
-    }, 1200);
+    }, 1500);
 }
 
 //Creating a shuffle function
