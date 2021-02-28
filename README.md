@@ -1,6 +1,9 @@
-# shell-shock-memory-game
+# Shell-Shock-Memory-Game
 My second project will be based on a memory card game. The theme will be my favourite cartoon group known
 as the Teenage Mutant Ninja Turtles. I will be using HTML, CSS and JavaScript to create an interactive game.
+
+# Demo
+Here is the interactive demo [game]()  
 
 ## User Experience
     
