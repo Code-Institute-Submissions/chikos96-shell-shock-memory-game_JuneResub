@@ -3,7 +3,7 @@ My second project will be based on a memory card game. The theme will be my favo
 as the Teenage Mutant Ninja Turtles. I will be using HTML, CSS and JavaScript to create an interactive game.
 
 # Demo
-Here is the interactive demo [game]()  
+Here is the interactive demo [game](https://chikos96.github.io/shell-shock-memory-game/) 
 
 ## User Experience
     
