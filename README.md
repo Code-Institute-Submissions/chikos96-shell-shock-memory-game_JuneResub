@@ -27,10 +27,10 @@ find all the cards to match. It is fun and interactive for all users. It will be
 ## Wireframe
 This is the wireframe that i did for desktop, mobile and tablet. It shows my explanation on how i want my game to be displayed.
 
-- [Memory Game Wireframe](https://github.com/chikos96/shell-shock-memory-game/blob/bc2238c5a07495ac63edbfdfa353c3172d16baeb/memory-game-wireframe.pdf)
+- [Memory Game Wireframe](https://github.com/chikos96/shell-shock-memory-game/blob/d3e8713f85745b58c31d0d1ec4bc1ce68e399a5b/assets/documentation/memory-game-wireframe.pdf)
 ## Features
 
-The game will consist of 14 cards with the title above and the score and time below the cards. 
+The game will consist of 14 cards with the title above and time below the cards. 
  
 ### Existing Features
 - Cards- it allows the users to click and see what the card reveals. 
@@ -51,6 +51,7 @@ The game will consist of 14 cards with the title above and the score and time be
 4. [Git](https://git-scm.com/)
 5. [GitHub](https://github.com/)
 6. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+7. [JQuery](https://jquery.com/)
 
 ## Testing
 
@@ -76,10 +77,26 @@ The user will be able to understand the game and it will help the user to know w
 the cards are and if they match or not
 
 ## Further Testing
+- I add jquery to better simplify and adjust my codes.
+- I want my functions to work correctly without any bugs. I decided to create a condition where each
+card has been defined. So l defined them as "firstClick". Therefore i want to make sure that if the cards match,
+they wont flip back and if the cards do not match, they flip back.
+- I tested the game with Google Chrome, Microsoft Explorer and Mozilla Firefox.
+- I tested the game using different devices using my IPad and my IPhone.
 
+### Bug
+I have encountered so many bugs in my game but i did my best to fix them as much as possible:
+- The functions were complicated to solve the problem but i have made some changes for each
+function to work.
+- I removed the check function because it was not actually checking the cards properly.
+- I fixed the matched function to actually check if the cards match.
+- I fixed the unmatched function to actually check if the cards do not match.
+- I was able to fix time but unfortunately when i finish the game, it continues to go on.
+- I used lockBoard to fix the bug for the memory board game. 
+- Every time i click the card fast, the card will move and you will have to wait until the
+card flips back. 
 
-
-[The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/bff3f724301bfeb1395f74c481a0ff20f6f9fcb2/screenshots%20for%20testing%20validation.pdf)
+[The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/d3e8713f85745b58c31d0d1ec4bc1ce68e399a5b/assets/documentation/screenshots-for-testing-validation.pdf)
 ## Deployment
 
 - To deploy my project to GitHub pages, here are the following:
