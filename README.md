@@ -2,8 +2,11 @@
 My second project will be based on a memory card game. The theme will be my favourite cartoon group known
 as the Teenage Mutant Ninja Turtles. I will be using HTML, CSS and JavaScript to create an interactive game.
 
+<a name="demo"></a>
+
 # Demo
-Here is the interactive demo [game](https://chikos96.github.io/shell-shock-memory-game/) 
+Here is the interactive demo [game](https://chikos96.github.io/shell-shock-memory-game/)
+<img src='./assets/mockup/memory-game.png'></img> 
 
 ## User Experience
     
@@ -55,6 +58,9 @@ The game will consist of 14 cards with the title above and time below the cards.
 5. [GitHub](https://github.com/)
 6. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 7. [JQuery](https://jquery.com/)
+8. [Html Validator](https://validator.w3.org/)
+9. [CSS Validator](https://jigsaw.w3.org/css-validator/)
+10. [JavaScript Validator](https://jshint.com/)
 
 ## Testing
 
@@ -99,7 +105,7 @@ function to work.
 - Every time i click the card fast, the card will move and you will have to wait until the
 card flips back. 
 
-[The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/d3e8713f85745b58c31d0d1ec4bc1ce68e399a5b/assets/documentation/screenshots-for-testing-validation.pdf)
+[The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/abdb00ae77a5f728739552e57feef6d605fb8dc3/assets/documentation/Screenshots%20for%20testing%20proof.pdf)
 ## Deployment
 
 - To deploy my project to GitHub pages, here are the following:
@@ -129,3 +135,5 @@ while changing the code to help fit my own needs for the game.(https://www.youtu
 
 - I received inspiration from Nickeledeon. 
 - I would like to thank the Tutor Assistance for helping me with technical difficulties.
+- I would to thank my friend for assisting me with solving the code problems.
+- I would like to thank Aaron for the support.
