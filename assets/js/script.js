@@ -9,9 +9,9 @@ $(document).ready(function () {
     $(".inner-card").each(function () {
         card.push(this);
     });
-    game();
-    time();
     shuffle();
+    time();
+    game();
 });
 
 function game() {
@@ -19,7 +19,6 @@ function game() {
         if (lockBoard === false) {
             if (this === firstClick) {
                 // to not click the same card twice
-                return;
             } else {
                 this.style.transform = 'rotateY(180deg)';
             }
@@ -42,7 +41,7 @@ function matched() {
         lockBoard = true
         setTimeout(function () {
             lockBoard = false;
-        }, 1000);
+        }, 500);
         disableClick();
         pairCards.push(firstClick, secondClick)
         endGame();
@@ -59,7 +58,7 @@ function unmatched() {
         firstClick.style.transform = 'rotateY(0deg)'; //rotate back to the back-shell
         secondClick.style.transform = 'rotateY(0deg)'; //rotate back to the back-shell
         lockBoard = false;
-    }, 1500);
+    }, 1000);
 }
 
 //Creating a shuffle function
@@ -83,10 +82,10 @@ function endGame() {
     if (pairCards.length === 14) {
         setTimeout(function () {
             alert('Congratulations');
-        }, 1500);
+        }, 800);
         setTimeout(function () {
             resetBoard();
-        }, 1500);
+        }, 750);
     }
 }
 
