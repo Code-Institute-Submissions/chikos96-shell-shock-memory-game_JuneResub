@@ -2,6 +2,8 @@
 My second project will be based on a memory card game. The theme will be my favourite cartoon group known
 as the Teenage Mutant Ninja Turtles. I will be using HTML, CSS and JavaScript to create an interactive game.
 
+# How to play the game
+
 <a name="demo"></a>
 
 # Demo
@@ -12,7 +14,7 @@ Here is the interactive demo [game](https://chikos96.github.io/shell-shock-memor
     
 - UX Design
 
-This game is for user that to play games. The Memory Game is the most suitable game because the user gets to
+This game is for users that like to play games. The Memory Game is the most suitable game because the user gets to
 find all the cards to match. It is fun and interactive for all users. It will be in a single page format.
 
 ### User stories
@@ -23,7 +25,7 @@ find all the cards to match. It is fun and interactive for all users. It will be
 
 ### Design
  - Color Scheme
-     -   The main colors I used are green and black.
+     -   The main colors I used are green, white and black.
 - Typography
       -  I used Cambria font style. 
 - Imagery
@@ -68,22 +70,18 @@ The game will consist of 14 cards with the title above and time below the cards.
 
 ### As a user, I want to be able to click all the cards.
 The user will be introduced with two sets of cards where he/she will be
-able to click the card that he/she reveals
-
-### As a user, I want to be able to get some scores.
-If the user click on the card and matches with another card, he/she
-will definitely get a score
+able to click the card that he/she reveals.
 
 ### As a user, I want to be able to see how much time did i match my cards.
 The time will be displayed for the user and the user will be able to check
-how much time he/she has left
+how much time he/she has left.
 
 ### As a user, I want to play the game again.
 The user can play the game again by reloading the browser.
 
 ### As a user, i want to understand easily about the functionality of the game.
 The user will be able to understand the game and it will help the user to know where
-the cards are and if they match or not
+the cards are and if they match or not.
 
 ## Further Testing
 - I add jquery to better simplify and adjust my codes.
@@ -121,8 +119,6 @@ card flips back.
     10. Click on the link and it will display the website.
 
 ## Credits
-
-## Code
 
 ### Content
 - To create the memory game, i watched the tutorial by codeTonight which gave me useful tips
