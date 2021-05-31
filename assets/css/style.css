@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgreen;
+    background-color: white;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 .outer-card {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 20px 40px;
     margin: 20px;
     justify-content: center;
