@@ -3,6 +3,10 @@ My second project will be based on a memory card game. The theme will be my favo
 as the Teenage Mutant Ninja Turtles. I will be using HTML, CSS and JavaScript to create an interactive game.
 
 # How to play the game
+The game consists of 18 cards and they are arranged in a grid randomly.
+
+The rules are very simple. The user/player must flip over two hidden cards at a time to locate them 
+to see if they match together. The game ends when all the cards are flipped and matched correctly. 
 
 <a name="demo"></a>
 
@@ -65,11 +69,15 @@ The game will consist of 14 cards with the title above and time below the cards.
 10. [JavaScript Validator](https://jshint.com/)
 
 ## Testing
+The W3C Markup Validator, W3C CSS Validator Services and Jshint were used to validate every page of the project to ensure there were no syntax errors in the project.
+- [W3C Markup Validator]()
+- [W3C CSS Validator]()
+- [jshint]()
 
 ### Testing User Stories from User Experience (UX) Section
 
 ### As a user, I want to be able to click all the cards.
-The user will be introduced with two sets of cards where he/she will be
+The user will be introduced with a set of 18 cards where he/she will be
 able to click the card that he/she reveals.
 
 ### As a user, I want to be able to see how much time did i match my cards.
@@ -91,7 +99,7 @@ they wont flip back and if the cards do not match, they flip back.
 - I tested the game with Google Chrome, Microsoft Explorer and Mozilla Firefox.
 - I tested the game using different devices using my IPad and my IPhone.
 
-### Bug
+### Known Bug
 I have encountered so many bugs in my game but i did my best to fix them as much as possible:
 - The functions were complicated to solve the problem but i have made some changes for each
 function to work.
@@ -102,10 +110,13 @@ function to work.
 - I used lockBoard to fix the bug for the memory board game. 
 - Every time i click the card fast, the card will move and you will have to wait until the
 card flips back. 
+- I have noticed that the bug was comming from the function endgame because of the setTimeOut that 
+i added for the cards. So i made some adjustments and fixed it.
 
 [The screenshots for testing proof](https://github.com/chikos96/shell-shock-memory-game/blob/abdb00ae77a5f728739552e57feef6d605fb8dc3/assets/documentation/Screenshots%20for%20testing%20proof.pdf)
 ## Deployment
 
+## GitHub Pages
 - To deploy my project to GitHub pages, here are the following:
     1. Log in to GitHub.
     2. Go to your right-hand profile and locate "your repositories"
@@ -117,6 +128,43 @@ card flips back.
     8. The page will automatically refresh.
     9. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section. 
     10. Click on the link and it will display the website.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without 
+affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://chikos96.github.io/shell-shock-memory-game/
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://chikos96.github.io/shell-shock-memory-game/
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) 
+to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
 
 ## Credits
 
