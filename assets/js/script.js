@@ -85,7 +85,7 @@ function endGame() {
         }, 800);
         setTimeout(function () {
             resetBoard();
-        }, 750);
+        }, 800);
     }
 }
 
