@@ -79,7 +79,7 @@ function resetBoard() {
 }
 
 function endGame() {
-    if (pairCards.length === 14) {
+    if (pairCards.length === 18) {
         setTimeout(function () {
             alert('Congratulations');
         }, 800);
