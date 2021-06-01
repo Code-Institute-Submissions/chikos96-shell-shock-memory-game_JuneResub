@@ -70,9 +70,9 @@ The game will consist of 14 cards with the title above and time below the cards.
 
 ## Testing
 The W3C Markup Validator, W3C CSS Validator Services and Jshint were used to validate every page of the project to ensure there were no syntax errors in the project.
-- [W3C Markup Validator]()
-- [W3C CSS Validator]()
-- [jshint]()
+- [W3C Markup Validator](/workspace/shell-shock-memory-game/assets/documentation/html-proof.pdf)
+- [W3C CSS Validator](/workspace/shell-shock-memory-game/assets/documentation/css-proof.pdf)
+- [jshint](/workspace/shell-shock-memory-game/assets/documentation/js-proof.pdf)
 
 ### Testing User Stories from User Experience (UX) Section
 
